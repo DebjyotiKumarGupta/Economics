@@ -1,115 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-        /* Style for the container div */
-        .container {
-            height: 70vh; /* 40% of the viewport height */
-            background: linear-gradient(to right, #dee8cc, #ffffff);
-            width: 100vw;
-            display: flex;
-            justify-content: space-between;
-        }
+      /* Style for the container div */
+      .container {
+        height: 469px; /* 40% of the viewport height */
+        background: linear-gradient(to right, #dee8cc, #ffffff);
+        width: 665px;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 35px;
+        padding-top: 41px;
+      }
 
-        /* Style for the text */
-        .text {
-            font-size: 26.92px; /* For desktop */
-            font-size: 25px; /* For mobile devices */
-            /* color: #333; */
-            margin-right: 20px;
-            font-weight: bold;
-            text-align: left;
-        }
+      /* Style for the text */
+      .text {
+        font-size: 26.92px; /* For desktop */
+        /*    font-size: 25px; For mobile devices */
+        /* color: #333; */
 
-        .tabletext{
-          font-size: 16px; /* For desktop */
-          font-size: 13px; /* For mobile devices */
-          /* font-weight: bold; */
-          font-weight: 500;
-        }
+        margin-right: 20px;
+        /* font-weight: 800; */
+        text-align: left;
+      }
 
-        /* Style for the image */
-        .image {
-            width: 35vw; /* Set the image width to cover 35% of the viewport width */
-            height: 70vh; /* Set the image height to 40% of the viewport height */
-        }
+      .tabletext {
+        font-size: 16px; /* For desktop */
+        font-size: 13px; /* For mobile devices */
+        /* font-weight: bold; */
+        font-weight: 500;
+      }
 
-        /* Center the table */
-        table {
-            margin: 0 auto;
-        }
+      /* Style for the image */
+      .image {
+        width: 308px; /* Set the image width to cover 35% of the viewport width */
+        height: 469px; /* Set the image height to 40% of the viewport height */
+      }
 
-        table {
-            margin: 0 auto;
-            border-collapse: collapse;
-            width: 100%;
-        }
+      /* Center the table */
+      table {
+        margin: 0 auto;
+      }
 
-        td {
-            padding: 10px;
-            text-align: center;
-        }
+      table {
+        margin: 0 auto;
+        border-collapse: collapse;
+        width: 100%;
+      }
 
-        /* Style for the "Subscribe Now" button */
-        button {
-            display: block;
-            margin: 0 auto;
-            background-color: #ED193B;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
+      td {
+        padding: 10px;
+        text-align: center;
+      }
+      .economic {
+        width: 328.51px; /* Set the image width to cover 35% of the viewport width */
+        height: 30.32px;
+      }
 
-        /* Style for the email address */
+      .text2 {
+        font-size: 18px;
+        line-height: 24px;
+        /* font-weight: bold; */
+      }
+
+      /* Styles for phones */
+      @media only screen and (max-width: 600px) {
+        .economic {
+          width: 259.6px;
+          height: 23.96px;
+          background-color: #ffffff;
+        }
+        .text2 {
+          font-size: 18px;
+          line-height: 24px;
+          font-weight: bold;
+        }
+        .imageText {
+          width: 110px;
+          height: 80px;
+        }
+        .lastText {
+          font-size: 16px;
+          width: 390px;
+        }
+        .Get {
+          font-size: 30px;
+          font-weight: 700;
+          text-align: center;
+          width: 390px;
+        }
         .email {
-            color: blue;
+          font-size: 13px;
+          text-align: center;
+          font-weight: 400;
+          width: 390px;
         }
+      }
+
+      /* Style for the "Subscribe Now" button */
+      button {
+        display: block;
+        margin: 0 auto;
+        background-color: #ed193b;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      .imageText {
+        width: 200px;
+        height: 159.09px;
+      }
+      .table {
+        width: 701px;
+        height: 351px;
+      }
+      .tabletext {
+        font-size: 16px;
+        text-align: left;
+      }
+      .lastText {
+        font-size: 24px;
+        /* align-items: center; */
+        line-height: 41px;
+        text-align: center;
+        width: 701px;
+      }
+
+      .Get {
+        font-size: 35px;
+        font-weight: 700;
+        text-align: center;
+        padding: 10px;
+        width: 680px;
+      }
+      .email {
+        font-size: 16px;
+        text-align: center;
+        font-weight: 400;
+        border-top: #3699dc;
+        width: 701px;
+      }
     </style>
-</head>
-<body>
-<div class="container">
-    <div>
-        <img src="/images/economics.png" alt="Economics Times" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <img
+          class="economic"
+          src="/images/economics.png"
+          alt="Economics Times"
+        />
 
         <p class="text">
-            Today's Investment Ideas & Recommendations<br>Are Now Published
+          Today's <b>Investment Ideas & Recommendations</b><br />Are Now
+          Published
         </p>
-        <p>Hi <Reader Name></p>
+        <div class="text2">
+          <p>
+            <b>Hi <span>< Reader Name ></span></b>
+          </p>
 
-        <p>We noticed that the investment ideas from market experts caught your attention.</p>
-        <p><b>ETPrime</b> members are making informed investment decisions with latest stock recommendations and investment ideas published daily.</p>
+          <p>
+            We noticed that the investment ideas from market experts caught your
+            attention.
+          </p>
+          <p>
+            <b>ETPrime</b> members are making informed investment decisions with
+            latest stock recommendations and investment ideas published daily.
+          </p>
+        </div>
+      </div>
+
+      <img class="image" src="/images/tree.png" alt="Your Image" />
+    </div>
+    <div style="background-color: #f6f9f1; width: 701px">
+      <div
+        style="
+          font-weight: 700;
+          font-size: 28px;
+          font-family: Roboto;
+          text-align: center;
+        "
+      >
+        <b>This might interest you:</b>
+      </div>
+      <table class="table">
+        <tr>
+          <td>
+            <img class="imageText" src="/images/img1.png" alt="Image 1" />
+            <div class="tabletext">
+              <b>Are select metals prices indicating China’s...</b>
+            </div>
+          </td>
+          <td>
+            <img class="imageText" src="/images/img2.png" alt="Image 2" />
+            <div class="tabletext">
+              <b>Are select metals prices indicating China’s...</b>
+            </div>
+          </td>
+          <td>
+            <img class="imageText" src="/images/img3.png" alt="Image 3" />
+            <div class="tabletext">
+              <b>Are select metals prices indicating China’s...</b>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="lastText" style="background-color: white">
+      Grow your portfolio with
+      <b
+        >smart market tools &<br />
+        investment ideas</b
+      >
+      with
+      <img
+        src="/images/eiPrime.png"
+        alt="ETPrime"
+        height="19.3px"
+        width="123.8px"
+      />
     </div>
 
-    <img class="image" src="/images/tree.png" alt="Your Image" />
-</div>
+    <div class="Get" style="background-color: white">
+      Get
+      <span style="color: #ed193b">20% Off</span>
+    </div>
 
-<div style="font-weight:700"><b>This might interest you:</b></div>
-<table>
-    <tr>
-        <td>
-            <img src="/images/img1.png" alt="Image 1"  />
-            <div class="tabletext"><b>Are select metals prices indicating China’s...</b></div>
-        </td>
-        <td>
-            <img  src="/images/img2.png" alt="Image 2" />
-            <div class="tabletext">Are select metals prices indicating China’s...</div>
-        </td>
-        <td>
-            <img src="/images/img3.png" alt="Image 3" />
-            <div class="tabletext">Are select metals prices indicating China’s...</div>
-        </td>
-    </tr>
-</table>
-
-<div>Grow your portfolio with smart market tools & investment ideas with</div>
-<img src="/images/eiPrime.png" alt="ETPrime" />
-<div>Get 20% Off</div>
-<button>Subscribe Now</button>
-<div>If you have any questions or need assistance, please contact our customer support team at <span class="email">care@etprime.com</span></div>
-</body>
+    <div class="email" style="background-color: white">
+      <button>Subscribe Now</button>
+      If you have any questions or need assistance, please contact our customer
+      support<br />
+      team at <a style="color: #3699dc">care@etprime.com</a>
+    </div>
+  </body>
 </html>
